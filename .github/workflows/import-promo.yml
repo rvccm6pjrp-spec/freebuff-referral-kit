@@ -30,7 +30,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add freebuff-export/remotion/out/promo/FREEBUFF-promo-v01.mp4 freebuff-kit-text.zip
+          git add -f freebuff-export/remotion/out/promo/FREEBUFF-promo-v01.mp4
+          git add -f freebuff-kit-text.zip
+          git status --short
           if git diff --cached --quiet; then
             echo "Nothing to commit"
           else
