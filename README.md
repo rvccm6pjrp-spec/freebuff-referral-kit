@@ -25,31 +25,38 @@ npm run render:promo
 
 Senza questo passaggio il video mostra `IL-TUO-CODICE`.
 
-Gli asset binari (MP4, MOV, zip) non sono versionati: si rigenerano con i comandi sotto. Il pacchetto completo, gia renderizzato, e in `freebuff-export.zip` nel workspace locale.
-
 ---
 
-## Struttura
+## Cosa c'è dentro
 
-```
-freebuff-export/
-├── 01-scripts/       8 script completi (hook, corpo, CTA, note di ripresa)
-├── 02-voiceover/     testi voiceover pronti
-├── 03-captions/      sottotitoli SRT
-├── 04-prompts/       prompt immagini e specifiche motion
-├── 05-presets/       preset di export e loudness
-├── 06-promo/         istruzioni e caption del promo
-├── manifest.csv      50 asset classificati
-└── remotion/         progetto Remotion: 6 overlay + promo
-    ├── src/
-    ├── scripts/
-    └── out/
-        ├── motion/   6 overlay ProRes 4444 con alpha
-        ├── promo/    MP4 pubblicabile
-        └── stills/   anteprime PNG
-```
+### Contenuti
 
-La strategia completa e in `strategy/README.md`; i documenti estesi sono in `campagna-buddy/` nel workspace locale.
+- `freebuff-export/01-scripts/` — 8 script completi, con hook, beat, shot list, voiceover e rischi.
+- `freebuff-export/02-voiceover/` — testi voiceover pronti.
+- `freebuff-export/03-captions/` — sottotitoli SRT.
+- `freebuff-export/04-prompts/` — prompt immagini e specifiche motion.
+- `freebuff-export/05-presets/` — preset di export e loudness.
+- `freebuff-export/06-promo/` — istruzioni e caption del promo.
+- `freebuff-export/manifest.csv` — 50 asset classificati.
+
+### Strategia
+
+- `strategy/README.md` — matematica dei 600, serie 0/600, compliance.
+- `campagna-buddy/13-freebuff-600.md` — verifica reward, pubblico, canali, piano 90 giorni.
+- `campagna-buddy/14-freebuff-italia-90.md` — piano operativo Italia, 15 hook, calendario.
+- `campagna-buddy/17-contenuti-v2.md` — 8 script Freebuff + 5 buddybank, 20 hook, piano 14 giorni.
+
+### Skill
+
+- `.agents/skills/` — 4 definizioni operative: `hook-writer`, `tiktok-script`, `reels-script`, `content-calendar`.
+- `.agents/skills/README.md` — elenco delle 14 skill installate.
+
+Le 14 skill complete (96 file, 884 KB, con references ed evals) e gli altri 16 documenti buddybank sono nel pacchetto `freebuff-kit-full.zip`.
+
+### Motion
+
+- `freebuff-export/remotion/src/` — 6 overlay + promo.
+- `freebuff-export/remotion/scripts/` — render di tutti gli asset.
 
 ---
 
@@ -66,6 +73,8 @@ npm run still         # anteprime PNG
 ```
 
 Gli overlay sono ProRes 4444, 1080x1920, 30 fps, `yuva444p12le`. Si montano sopra video sorgente in DaVinci, Premiere o CapCut.
+
+I binari (MP4, MOV, zip) non sono versionati: si rigenerano con i comandi. Il pacchetto gia renderizzato e `freebuff-kit-full.zip`.
 
 ---
 
