@@ -1,12 +1,10 @@
-# Skill della campagna
+# Skill della campagna — 54 skill reali
 
-19 skill operative: 14 di base per contenuti social + 5 aggiunte per questa campagna. Sono
-cartelle con un `SKILL.md` in formato agent-skill: si copiano in `.agents/skills/` e l'agente
-le carica quando servono.
+Nessuna di queste skill è stata scritta da me. Sono 54 skill esistenti, installate da 5
+repository pubblici con licenza MIT. Le 5 che avevo scritto per questa campagna sono state
+rimosse: non erano skill esistenti.
 
-**Non sono "tutte le skill del mondo" e non esiste un set oggettivamente migliore.** Sono le
-competenze che servono per fare questo lavoro: scrivere, girare, pubblicare, misurare e non
-farsi bannare. Se il lavoro cambia, si aggiunge la skill che manca.
+Provenienza, commit, licenze e motivazioni: [THIRD-PARTY.md](THIRD-PARTY.md).
 
 ## Come installarle
 
@@ -15,54 +13,93 @@ mkdir -p .agents/skills
 cp -r skills/* .agents/skills/
 ```
 
-Nella copia di lavoro originale sono in `.agents/skills/`. Nel repo trovi le 5 aggiunte e il
-pacchetto `freebuff-kit-text.zip` con tutte e 19.
+Nel repo la cartella `skills/` è già pronta. Se lavori in un altro progetto, copiala in
+`.agents/skills/`. Le dipendenze condivise (`references/`, `state/`, `scripts/`, `LICENSES/`)
+sono incluse: non vanno spostate.
 
-## Le 14 di base
+## Base — 14 skill
 
-| Skill | Quando usarla |
+Strategia, voce, copy, formati. Erano già nel progetto, sono MIT e restano la base.
+
+`brand-profile`, `voice-builder`, `copywriting`, `offers`, `launch`, `social`, `hook-writer`,
+`carousel-writer`, `reels-script`, `tiktok-script`, `cross-platform-repurposing`,
+`content-calendar`, `social-seo`, `link-in-bio-and-traffic`.
+
+## Instagram — 13 skill
+
+Pack `instagram-agent-skill` di Jake Schincariol. Include script veri: `hookscore.py`,
+`caption.py`, `beats.py`, `humanize.py`, `detect.py`, `swipe.py`.
+
+| Skill | Cosa fa |
 |---|---|
-| `brand-profile` | Prima di tutto: voce, pubblico, cosa diciamo e cosa no |
-| `voice-builder` | Costruire una voce partendo da testi reali |
-| `copywriting` | Copy di landing page, headline, promesse |
-| `offers` | Costruire l'offerta, non solo la pagina |
-| `launch` | Lanciare un prodotto o una funzionalità |
-| `social` | Contenuti organici per LinkedIn, X, Instagram, TikTok |
-| `hook-writer` | Prima riga, primi 3 secondi, cover |
-| `carousel-writer` | Caroselli IG/LinkedIn/TikTok photo |
-| `reels-script` | Script per Reels |
-| `tiktok-script` | Script per TikTok |
-| `cross-platform-repurposing` | Un'idea → post nativi per ogni piattaforma |
-| `content-calendar` | Ritmo e calendario editoriale |
-| `social-seo` | Ricerca dentro le piattaforme, keyword |
-| `link-in-bio-and-traffic` | Bio, click, traffico, UTM |
+| `ig-reel` | Reel da un'idea: 26 formule di hook, script, testo a schermo, beat sheet |
+| `ig-caption` | Caption con lint dei primi 125 caratteri, keyword e 3 hashtag |
+| `ig-audit` | Post-mortem: outlier multiple, hold a 3s, send per reach |
+| `ig-viral` | Trova i Reel che funzionano nel niche e li ranka per outlier multiple |
+| `ig-profile` | Vota il profilo su 100 e riscrive ciò che perde punti |
+| `ig-plan` | Piano settimanale di pubblicazione |
+| `ig-carousel` | Caroselli |
+| `ig-story` | Storie |
+| `ig-repurpose` | Un video/newsletter in una settimana di contenuti |
+| `ig-comment` | Commenti sotto post altrui, senza spam |
+| `ig-reply` | Risposte ai commenti |
+| `ig-dm` | Messaggi in entrata, collab, follow-up |
+| `ig-human` | Toglie il fingerprint AI: em dash, parole slop, caratteri invisibili |
 
-## Le 5 aggiunte per questa campagna
+## YouTube — 11 skill
 
-| Skill | Perché mancava |
+Pack `youtube-agent-skill` di Jake Schincariol. Stessi tool di scoring, adattati a YouTube.
+
+`yt-script`, `yt-package`, `yt-audit`, `yt-retention`, `yt-edit`, `yt-shorts`, `yt-seo`,
+`yt-viral`, `yt-plan`, `yt-comment`, `yt-chapters`.
+
+I punti di forza: script con 21 formule di hook, title+thumbnail come una coppia, retention
+export letto al secondo, Shorts estratti da un video lungo.
+
+## Publishing e produzione — 4 skill
+
+Dal plugin `marketing-skill` di marcosmodly.
+
+| Skill | Cosa fa |
 |---|---|
-| `caption-writer` | Era citata da 4 skill ma non installata. Scrive la caption per piattaforma, con CTA e disclosure |
-| `campaign-analytics` | Nessuna skill copriva misurazione, UTM e i 600 inviti senza numeri inventati |
-| `referral-compliance` | Disclosure, regole per piattaforma e comportamenti che fanno bannare |
-| `video-production` | Dal copione al MP4: ripresa, safe zone, audio, export, Remotion |
-| `community-engagement` | Commenti e DM: risposte utili, niente spam, moderazione |
+| `publish-pipeline` | Pubblica solo dopo approvazione: webhook n8n/Make o API della piattaforma, mostrando il payload esatto |
+| `community-post-generator` | Post per Reddit, Hacker News e community, con regole del subreddit |
+| `competitor-research` | Ricerca competitor e angoli |
+| `content-repurposer` | Un contenuto in più formati |
 
-## Cosa contengono le cartelle
+`publish-pipeline` non pubblica da sola: richiede webhook o credenziali impostate da te e un
+"yes" esplicito sul payload. Le dipendenze condivise sono in `references/`, `state/` e
+`scripts/` dentro questa cartella.
 
-Le 14 di base hanno anche `references/` ed `evals/` (96 file in totale). Le trovi complete in
-`freebuff-kit-text.zip`, scaricabile dalla pagina pubblica e presente nel repo. Nel repo sono
-browsabili le 5 aggiunte, così vedi subito come sono fatte.
+## Growth — 8 skill
 
-Le 5 aggiunte sono autosufficienti: un solo `SKILL.md`, nessuna dipendenza esterna.
+Da `coreyhaines31/marketingskills` (19,1k stelle).
 
-## Come sceglierne una
+`referrals`, `analytics`, `content-strategy`, `marketing-plan`, `community-marketing`,
+`influencer-marketing`, `copy-editing`, `attribution`.
 
-- Devo scrivere un post? `hook-writer` → `caption-writer`.
-- Devo girare un video? `reels-script` o `tiktok-script` → `video-production`.
-- Devo pubblicare un link referral? `referral-compliance` → `link-in-bio-and-traffic`.
-- Devo capire se funziona? `campaign-analytics`.
-- Devo rispondere a commenti e DM? `community-engagement`.
-- Devo pianificare due settimane? `content-calendar` → `cross-platform-repurposing`.
+`referrals` è la più direttamente utile: programmi refer-a-friend, incentivi, loop, payout.
+`analytics` copre tracking plan, UTM, GA4 e metriche calcolate bene.
+
+## Workflow — 4 skill
+
+Da `obra/superpowers` (60,5k stelle).
+
+- `brainstorming` — capire cosa costruire prima di costruirlo.
+- `writing-plans` — piano a task piccoli e verificabili.
+- `executing-plans` — esecuzione del piano.
+- `verification-before-completion` — niente "fatto" senza una verifica.
+
+Sono le uniche quattro di Superpowers che servono a una campagna di contenuti; le altre 11
+sono sviluppo software puro.
+
+## Cosa non è incluso
+
+- `aaaronmiller/create-viral-content`: non ha una licenza, quindi non posso ridistribuirla.
+  La linko in `THIRD-PARTY.md` come lettura consigliata.
+- Le 53 skill di `marketingskills`, le 14 di `marketing-skill` e le 15 di Superpowers: ho
+  preso solo quelle che servono. Il resto è rumore per questa campagna.
+- Paid ads, SEO web, sales/CRM: fuori perimetro.
 
 ## Regola
 

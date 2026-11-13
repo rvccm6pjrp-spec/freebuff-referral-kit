@@ -29,7 +29,7 @@ freebuff-export/
 └── remotion/                  ← sorgente + MP4 + overlay
 ```
 
-Le 19 skill stanno in `../skills/` (5 browsabili) e nel pacchetto `../freebuff-kit-text.zip`.
+Le 54 skill reali stanno in `../skills/` e nel pacchetto `../freebuff-kit-text.zip`.
 L'handover per la collega è `../INIZIA-QUI.md`.
 
 ---
@@ -68,5 +68,6 @@ npm install
 npm run render:promo
 ```
 
-Nel repo c'è `../freebuff-kit-text.zip` (1,5 MB) con testi, 19 skill e sorgente. Il pacchetto
-completo con gli overlay MOV è `../freebuff-kit-full.zip` (29 MB, nel workspace locale).
+Il pacchetto completo, con le 96 file delle skill e i sei overlay, è
+`../freebuff-kit-full.zip` (29 MB). La versione testuale, senza binari, è
+`../freebuff-kit-text.zip` (1,5 MB).

@@ -1,56 +1,68 @@
 # Le skill sono tutte e sono le migliori?
 
-**No.** E nessun set lo è. Le 14 iniziali erano una buona base, ma non erano autosufficienti:
-citavano skill non installate e coprivano solo una parte del lavoro. Ne ho aggiunte 5 per
-chiudere i buchi che contano davvero per questa campagna.
+**No, e avevi ragione a dubitare.** Le 5 skill che avevo aggiunto — `caption-writer`,
+`campaign-analytics`, `referral-compliance`, `video-production`, `community-engagement` — le
+avevo scritte io. Non erano skill esistenti. Le ho rimosse.
 
-## Cosa c'era
+Ora ci sono **54 skill reali**, installate da 5 repository pubblici con licenza MIT. Non sono
+"tutte" e non esiste un set oggettivamente migliore: sono quelle che servono a questa
+campagna, scelte per copertura, qualità e uso reale.
 
-14 skill, per lo più da una libreria social (MIT) più copywriting, offers e launch:
+## Cosa c'è ora
 
-`brand-profile`, `voice-builder`, `copywriting`, `offers`, `launch`, `social`, `hook-writer`,
-`carousel-writer`, `reels-script`, `tiktok-script`, `cross-platform-repurposing`,
-`content-calendar`, `social-seo`, `link-in-bio-and-traffic`.
-
-**Punti forti:** strategia, hook, script, adattamento per piattaforma, voce, offerta.
-**Punti deboli:** erano pensate per un'agenzia con un team e strumenti esterni. Mancavano le
-parti che servono a una persona sola che pubblica da zero.
-
-## Cosa mancava davvero
-
-| Buco | Conseguenza | Skill aggiunta |
+| Pack | Skill | Perché |
 |---|---|---|
-| Caption per piattaforma | 4 skill la citavano, ma non c'era: le caption restavano generiche | `caption-writer` |
-| Misurazione | Nessun modo per capire quali post portano iscritti, né per proiettare i 600 | `campaign-analytics` |
-| Disclosure e regole | Rischio di ban e di comunicazione commerciale non dichiarata | `referral-compliance` |
-| Produzione video | I copioni c'erano, ma non le impostazioni di ripresa, audio, export | `video-production` |
-| Commenti e DM | Il punto in cui una campagna referral diventa spam o community | `community-engagement` |
+| Instagram | 13 | Reel, caption, audit, viral research, profilo, commenti, DM, de-AI |
+| YouTube | 11 | Script, package, retention, edit, Shorts, SEO, commenti |
+| Publishing | 4 | `publish-pipeline` con approvazione, community post, competitor, repurpose |
+| Growth | 8 | Referrals, analytics, content strategy, marketing plan, community, influencer, copy-editing, attribution |
+| Workflow | 4 | Brainstorming, writing plans, executing plans, verification |
+| Base | 14 | Strategia, voce, copy, formati già presenti nel progetto |
 
-Totale: **19 skill**. Le 14 di base sono nel pacchetto `freebuff-kit-text.zip`; le 5 aggiunte
-sono anche browsabili in `skills/`.
+Dettaglio, sorgenti, commit e licenze: [skills/THIRD-PARTY.md](skills/THIRD-PARTY.md).
+Catalogo operativo: [skills/README.md](skills/README.md).
 
-## Cosa non ho aggiunto, e perché
+## Le cinque più utili per questa campagna
 
-- **Paid ads / media buying:** la campagna è a budget zero. Non serve.
-- **SEO web / blog:** il prodotto si distribuisce su social, non su un blog.
-- **Editing avanzato / motion design:** il promo è già fatto con Remotion; per i tagli basta
-  `video-production`.
-- **Sales / CRM:** non c'è vendita, c'è un invito gratuito.
-- **Trend-jacking automatico:** richiede dati live che qui non abbiamo; `social` e
-  `tiktok-script` coprono il buon senso.
+1. **`ig-viral`** — trova i Reel che stanno battendo il loro account, non quelli con più view
+   in assoluto. È la differenza tra copiare un formato e copiare un caso.
+2. **`referrals`** — la skill che mancava davvero: programmi refer-a-friend, incentivi, loop,
+   payout. Da leggere prima di aumentare i post.
+3. **`publish-pipeline`** — l'unica che porta il contenuto fino alla pubblicazione, con
+   payload esatto e approvazione. Non posta da sola: richiede webhook o credenziali tue.
+4. **`ig-human`** — toglie em dash, parole slop e caratteri invisibili. Utile perché la
+   caption deve sembrare scritta da una persona, non da un modello.
+5. **`brainstorming` + `writing-plans`** — il game changer di metodo: prima si decide cosa
+   fare, poi si scrive il piano, poi si esegue. Senza questa coppia, 54 skill sono solo
+   cartelle.
 
-Se in futuro serve una di queste, si aggiunge: meglio 19 skill usate che 60 cartelle mai aperte.
+## Cosa non ho incluso
 
-## Qualità, non quantità
+- **`create-viral-content`** di aaaronmiller: il repo non ha una licenza, quindi non posso
+  ridistribuirlo. È una delle skill virali più interessanti del 2026 (regole piattaforme,
+  AI-tell, disclosure): va installata dal repo originale.
+- **Le altre 45 di marketingskills, 10 di marketing-skill, 11 di Superpowers**: fuori
+  perimetro. Preferisco 54 skill usate a 100 cartelle mai aperte.
+- **Paid ads, SEO web, sales/CRM**: la campagna è organica e a budget zero.
 
-Le 14 originali hanno references ed evals (96 file). Il pacchetto completo è in
-`freebuff-kit-text.zip`; nel repo sono browsabili le 5 aggiunte. Le 5 aggiunte sono scritte per
-questo kit: niente teoria, checklist e testi pronti.
+## Sono le "migliori"?
+
+Sono **recenti, pubbliche, con licenza, usate e verificabili**:
+
+- Instagram pack: ~4.736 stelle, video YouTube da 15k view a novembre 2026.
+- YouTube pack: 11 skill, testato su YouTube a ottobre 2026.
+- Marketing plugin: aggiornato il 13/11/2026, publishing con approvazione.
+- Marketingskills: ~19,1k stelle, 53 skill, usato da technical marketer.
+- Superpowers: ~60,5k stelle, v7.0.2 del 03/11/2026.
+
+"La migliore" dipende dal lavoro. Per una campagna referral social, questo set copre scrittura,
+produzione, pubblicazione, misurazione e metodo. Se domani serve altro, si aggiunge dal repo
+giusto, non si inventa.
 
 ## Come si usa
 
-1. Apri `skills/README.md` e scegli la skill dal lavoro, non dal nome.
-2. Copia la cartella in `.agents/skills/` se non c'è già.
-3. Dalle in pasto il contesto reale: prodotto, pubblico, post, numeri. Senza contesto, qualsiasi
-   skill scrive genericamente.
-4. Se una skill contraddice i dati o le regole della piattaforma, vincono i dati e le regole.
+1. Apri `skills/README.md` e scegli la skill dal lavoro.
+2. Se non è già in `.agents/skills/`, copiala.
+3. Dalle contesto reale: prodotto, pubblico, post, numeri. Senza contesto, qualsiasi skill
+   scrive genericamente.
+4. Se contraddice i dati o le regole della piattaforma, vincono i dati e le regole.

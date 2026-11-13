@@ -1,8 +1,8 @@
 # Freebuff Referral Kit
 
 Materiali pronti per portare **600 utenti invitati reali** su Freebuff: un promo verticale già
-renderizzato, 8 script, la strategia, le regole per pubblicare il link senza spam e 19 skill
-operative. Budget 0, contenuti organici, nessun volto.
+renderizzato, 8 script, la strategia, le regole per pubblicare il link senza spam e 54 skill
+reali. Budget 0, contenuti organici, nessun volto.
 
 **Pagina pubblica (video + download):**
 https://site-2f41f8031e8745daaaa3f1ead41ad35f.freebuff.page
@@ -24,7 +24,7 @@ https://site-2f41f8031e8745daaaa3f1ead41ad35f.freebuff.page
 | Voiceover e sottotitoli | `freebuff-export/02-voiceover/`, `03-captions/` |
 | Strategia 600 inviti, piano 90 giorni, calendario 14 giorni | `freebuff-export/strategia/` |
 | Dove mettere il link, piattaforma per piattaforma | `freebuff-export/07-distribuzione/REGOLE-LINK.md` |
-| 19 skill | `skills/`, audit in [SKILLS.md](SKILLS.md) |
+| 54 skill reali | `skills/`, audit in [SKILLS.md](SKILLS.md) |
 | Manifest dei 50 asset | `freebuff-export/manifest.csv` |
 
 La campagna buddybank è archiviata separatamente e non serve per Freebuff.
@@ -61,7 +61,7 @@ timecode e shot list.
 README.md
 INIZIA-QUI.md          ← handover
 VIDEO.md               ← scheda del video
-SKILLS.md              ← audit delle 19 skill
+SKILLS.md              ← audit delle 54 skill
 freebuff-export/
 ├── strategia/         ← 600 inviti, 90 giorni, 14 giorni
 ├── 01-scripts/        ← 8 script
@@ -73,7 +73,7 @@ freebuff-export/
 ├── 07-distribuzione/  ← regole del link
 ├── manifest.csv
 └── remotion/          ← sorgente + MP4
-skills/                ← 19 skill
+skills/                ← 54 skill reali
 ```
 
 ---
@@ -86,7 +86,7 @@ skills/                ← 19 skill
 | Script, voiceover, SRT | fatti |
 | Strategia e calendario | fatti |
 | Regole per piattaforma | fatte |
-| 19 skill | fatte |
+| 54 skill reali | fatte |
 | Musica | da aggiungere |
 | Riprese reali | da fare |
 | Pubblicazione | da fare |

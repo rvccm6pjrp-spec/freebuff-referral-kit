@@ -60,7 +60,7 @@ freebuff-export/
 ├── 07-distribuzione/      ← dove mettere il link, regole anti-spam
 ├── manifest.csv           ← 50 asset classificati
 └── remotion/              ← sorgente e MP4 del promo
-skills/                    ← 19 skill
+skills/                    ← 54 skill reali
 ```
 
 La campagna buddybank è archiviata separatamente. Non serve per Freebuff.
@@ -86,7 +86,7 @@ La campagna buddybank è archiviata separatamente. Non serve per Freebuff.
 | 8 script + voiceover + SRT | fatti |
 | Strategia 600 / piano 90 giorni / calendario | fatti |
 | Regole per piattaforma | fatte |
-| 19 skill | fatte |
+| 54 skill reali | fatte |
 | Musica | da aggiungere |
 | Riprese reali | da fare |
 | Pubblicazione | da fare |
