@@ -1,0 +1,36 @@
+name: Reorganize strategy
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/reorganize.yml
+
+permissions:
+  contents: write
+
+jobs:
+  move:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Move docs and fix links
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p freebuff-export/strategia
+          git mv campagna-buddy/13-freebuff-600.md freebuff-export/strategia/01-600-inviti.md
+          git mv campagna-buddy/14-freebuff-italia-90.md freebuff-export/strategia/02-piano-90-giorni.md
+          git mv campagna-buddy/17-contenuti-v2.md freebuff-export/strategia/03-contenuti-14-giorni.md
+          git rm campagna-buddy/README.md
+          git rm strategy/README.md
+          sed -i 's|14-freebuff-italia-90.md|02-piano-90-giorni.md|g' freebuff-export/strategia/01-600-inviti.md
+          sed -i 's|13-freebuff-600.md|01-600-inviti.md|g' freebuff-export/strategia/02-piano-90-giorni.md
+          sed -i 's|freebuff-export/07-distribuzione|../07-distribuzione|g' freebuff-export/strategia/01-600-inviti.md
+          git rm .github/workflows/reorganize.yml
+          git add -A
+          git status --short
+          git commit -m "Move Freebuff strategy docs into freebuff-export/strategia"
+          git push origin HEAD:main
