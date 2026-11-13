@@ -4,7 +4,7 @@
 `campaign-analytics`, `referral-compliance`, `video-production`, `community-engagement` — le
 avevo scritte io. Non erano skill esistenti. Le ho rimosse.
 
-Ora ci sono **54 skill reali**, installate da 5 repository pubblici con licenza MIT. Non sono
+Ora ci sono **54 skill reali**, installate da 6 repository pubblici con licenza MIT. Non sono
 "tutte" e non esiste un set oggettivamente migliore: sono quelle che servono a questa
 campagna, scelte per copertura, qualità e uso reale.
 
@@ -17,7 +17,7 @@ campagna, scelte per copertura, qualità e uso reale.
 | Publishing | 4 | `publish-pipeline` con approvazione, community post, competitor, repurpose |
 | Growth | 8 | Referrals, analytics, content strategy, marketing plan, community, influencer, copy-editing, attribution |
 | Workflow | 4 | Brainstorming, writing plans, executing plans, verification |
-| Base | 14 | Strategia, voce, copy, formati già presenti nel progetto |
+| Base | 14 di 106 | Strategia, voce, copy, formati; `social-media-skills/skills`, MIT |
 
 Dettaglio, sorgenti, commit e licenze: [skills/THIRD-PARTY.md](skills/THIRD-PARTY.md).
 Catalogo operativo: [skills/README.md](skills/README.md).

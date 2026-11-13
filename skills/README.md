@@ -1,6 +1,6 @@
 # Skill della campagna — 54 skill reali
 
-Nessuna di queste skill è stata scritta da me. Sono 54 skill esistenti, installate da 5
+Nessuna di queste skill è stata scritta da me. Sono 54 skill esistenti, installate da 6
 repository pubblici con licenza MIT. Le 5 che avevo scritto per questa campagna sono state
 rimosse: non erano skill esistenti.
 
@@ -19,7 +19,8 @@ sono incluse: non vanno spostate.
 
 ## Base — 14 skill
 
-Strategia, voce, copy, formati. Erano già nel progetto, sono MIT e restano la base.
+Dal repo `social-media-skills/skills` (106 skill, MIT): strategia, voce, copy, formati. Erano
+già installate nel progetto e restano la base.
 
 `brand-profile`, `voice-builder`, `copywriting`, `offers`, `launch`, `social`, `hook-writer`,
 `carousel-writer`, `reels-script`, `tiktok-script`, `cross-platform-repurposing`,

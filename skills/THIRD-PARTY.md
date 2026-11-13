@@ -1,6 +1,6 @@
 # Provenienza delle skill
 
-54 skill, 5 repository, tutte MIT. Nessun file è stato riscritto: sono copie dei pack
+54 skill, 6 repository, tutte MIT. Nessun file è stato riscritto: sono copie dei pack
 originali, con le dipendenze condivise (`references/`, `state/`, `scripts/`) accanto alle
 skill. Le licenze complete sono in `LICENSES/`.
 
@@ -11,9 +11,14 @@ skill. Le licenze complete sono in `LICENSES/`.
 | Publishing | 4 di 14 | [marcosmodly/marketing-skill](https://github.com/marcosmodly/marketing-skill) | MIT | 2026-11-13 | Post Reddit r/claudeskills del 09/11/2026; plugin con 12 skill marketing |
 | Growth | 8 di 53 | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT | 2026-11-11 | ~19.1k stelle (ClaudeFast, 10/11/2026); 29° su hotskills.dev |
 | Workflow | 4 di 15 | [obra/superpowers](https://github.com/obra/superpowers) | MIT | 2026-11-03 (v7.0.2) | 60.5k stelle (hotskills.dev, 11/11/2026) |
-| Base | 14 | Già presenti nel progetto, `license: MIT` nei file | MIT | — | Usate nella campagna buddybank/Freebuff |
+| Base | 14 di 106 | [social-media-skills/skills](https://github.com/social-media-skills/skills) | MIT | repo creato 2026-07-16 | 106 skill, mantenuto da Frank Heijdenrijk / WoopSocial |
 
 ## Cosa è stato incluso
+
+### Base (14 di 106)
+`brand-profile`, `voice-builder`, `copywriting`, `offers`, `launch`, `social`, `hook-writer`,
+`carousel-writer`, `reels-script`, `tiktok-script`, `cross-platform-repurposing`,
+`content-calendar`, `social-seo`, `link-in-bio-and-traffic`.
 
 ### Instagram (13)
 `ig-audit`, `ig-caption`, `ig-carousel`, `ig-comment`, `ig-dm`, `ig-human`, `ig-plan`,
@@ -65,6 +70,7 @@ Le licenze complete sono in `LICENSES/`:
 - `youtube-agent-skill-LICENSE` — MIT, Copyright (c) 2026 Jake Schincariol
 - `marketing-skill-LICENSE` — MIT, Copyright (c) 2026 marcosmodly
 - `marketingskills-LICENSE` — MIT, Copyright (c) 2025 Corey Haines
+- `social-media-skills-LICENSE` — MIT, Copyright (c) 2026 Frank Heijdenrijk
 - `superpowers-LICENSE` — MIT, Copyright (c) 2025 Jesse Vincent
 
 Se ridistribuisci il kit, tieni queste licenze e questo file insieme alle skill.
