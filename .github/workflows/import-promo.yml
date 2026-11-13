@@ -26,7 +26,7 @@ jobs:
             -o freebuff-kit-text.zip
           ls -lh freebuff-export/remotion/out/promo/FREEBUFF-promo-v01.mp4 freebuff-kit-text.zip
 
-      - name: Commit
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -35,5 +35,5 @@ jobs:
             echo "Nothing to commit"
           else
             git commit -m "Add promo video and text kit (26s, 1080x1920)"
-            git push
+            git push origin HEAD:main
           fi
