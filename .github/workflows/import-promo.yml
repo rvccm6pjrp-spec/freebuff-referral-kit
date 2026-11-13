@@ -26,16 +26,29 @@ jobs:
             -o freebuff-kit-text.zip
           ls -lh freebuff-export/remotion/out/promo/FREEBUFF-promo-v01.mp4 freebuff-kit-text.zip
 
+      - name: Sync skills and docs
+        run: |
+          rm -rf /tmp/freebuff-kit && mkdir -p /tmp/freebuff-kit
+          unzip -q freebuff-kit-text.zip -d /tmp/freebuff-kit
+          rm -rf skills
+          cp -r /tmp/freebuff-kit/skills ./skills
+          cp /tmp/freebuff-kit/SKILLS.md ./SKILLS.md
+          cp /tmp/freebuff-kit/README.md ./README.md
+          cp /tmp/freebuff-kit/INIZIA-QUI.md ./INIZIA-QUI.md
+          cp /tmp/freebuff-kit/VIDEO.md ./VIDEO.md
+          cp /tmp/freebuff-kit/freebuff-export/README.md ./freebuff-export/README.md
+          echo "skills: $(find skills -name SKILL.md | wc -l)"
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f freebuff-export/remotion/out/promo/FREEBUFF-promo-v01.mp4
-          git add -f freebuff-kit-text.zip
-          git status --short
+          git add -A skills SKILLS.md README.md INIZIA-QUI.md VIDEO.md freebuff-export/README.md
+          git add -f freebuff-export/remotion/out/promo/FREEBUFF-promo-v01.mp4 freebuff-kit-text.zip
+          git status --short | head -60
           if git diff --cached --quiet; then
             echo "Nothing to commit"
           else
-            git commit -m "Add promo video and text kit (26s, 1080x1920)"
+            git commit -m "Sync 54 real skills, docs and promo (sync-skills)"
             git push origin HEAD:main
           fi
