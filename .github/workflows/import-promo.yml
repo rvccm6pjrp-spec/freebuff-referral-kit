@@ -1,3 +1,4 @@
+# Syncs the promo video and the text kit (54 real skills, 6 MIT repos).
 name: Import promo video
 
 on:
