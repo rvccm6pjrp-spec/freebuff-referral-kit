@@ -1,9 +1,11 @@
-# Freebuff Export — pacchetto di produzione
+# Pacchetto di produzione Freebuff
 
-Tutto quello che serve per girare, montare ed esportare gli otto contenuti Freebuff. I sei overlay e il promo sono gia renderizzati; qui trovi anche voiceover, timecode, prompt e preset.
+Tutto quello che serve per pubblicare il promo e girare gli otto contenuti. Nessun volto,
+nessun budget, nessun file da inventare: testi, voiceover, timecode, prompt, preset e video.
 
-**Versione:** 13 novembre 2026
-**Formato:** verticale 9:16, 1080x1920, 30 fps
+**Pagina pubblica:** https://site-2f41f8031e8745daaaa3f1ead41ad35f.freebuff.page
+**Video:** `remotion/out/promo/FREEBUFF-promo-v01.mp4`
+**Formato:** verticale 9:16, 1080×1920, 30 fps
 **Lingua:** italiano
 **Durata:** 20–35 secondi per video
 
@@ -14,46 +16,34 @@ Tutto quello che serve per girare, montare ed esportare gli otto contenuti Freeb
 ```
 freebuff-export/
 ├── README.md
-├── manifest.csv               ← elenco completo degli asset
+├── manifest.csv               ← 50 asset classificati
 ├── checklist.md               ← controlli prima di pubblicare
-├── 01-scripts/                ← un file per video, con timecode e shot list
+├── strategia/                 ← 600 inviti, piano 90 giorni, calendario 14 giorni
+├── 01-scripts/                ← 8 script con timecode e shot list
 ├── 02-voiceover/              ← testo esatto della voce
-├── 03-captions/               ← sottotitoli SRT
-├── 04-prompts/
-│   ├── immagini.md
-│   └── motion.md
-├── 05-presets/
-│   └── export.md
+├── 03-captions/               ← SRT pronti
+├── 04-prompts/                ← immagini e motion
+├── 05-presets/                ← export e loudness
 ├── 06-promo/                  ← istruzioni e caption del promo
-└── remotion/                  ← progetto per overlay e promo
-    ├── src/
-    ├── scripts/
-    ├── out/
-    └── README.md
+├── 07-distribuzione/          ← dove mettere il link e regole anti-spam
+└── remotion/                  ← sorgente + MP4 + overlay
 ```
 
----
-
-## Legenda dei tipi di asset
-
-| Tipo | Cosa significa | Formato | Chi lo produce |
-|---|---|---|---|
-| **VIDEO** | Ripresa reale dello schermo o delle mani | MP4/MOV, 1080x1920 | Registrazione schermo, telefono |
-| **MOTION** | Grafica animata: contatori, prezzi, wipe, barre | MOV con alpha | Remotion, CapCut, After Effects |
-| **PHOTO** | Immagine statica: copertina, thumbnail, sfondo | PNG/JPG | GPT Image, Canva |
-| **AUDIO** | Voiceover e musica | WAV 48 kHz, MP3 320 kbps | Voce umana o TTS |
-| **CAPTION** | Sottotitoli e testi a schermo | SRT, PNG con alpha | Trascrizione, CapCut |
-
-Nel `manifest.csv` ogni riga ha `asset_id`, `tipo`, `durata_s`, `risoluzione`, `file_atteso` e `stato`.
+Le 19 skill stanno in `../skills/` (5 browsabili) e nel pacchetto `../freebuff-kit-text.zip`.
+L'handover per la collega è `../INIZIA-QUI.md`.
 
 ---
 
 ## Workflow in sei passi
 
-1. **Prepara il repo demo.** Un progetto vero, non un mockup.
-2. **Registra i VIDEO.** Segui la shot list di ogni script.
-3. **Registra il voiceover.** Usa i file in `02-voiceover/`.
-4. **Crea i MOTION.** Il progetto Remotion li genera gia: `npm run render`.
+1. **Prepara il repo demo.** Un progetto vero, non un mockup. Serve per registrare `git diff` e
+   terminale.
+2. **Registra i VIDEO.** Segui la shot list di ogni script. 1080×1920 se possibile, altrimenti
+   1920×1080 e ritaglia.
+3. **Registra il voiceover.** Usa `02-voiceover/`. Se usi un TTS, mantieni la stessa voce per
+   tutti gli otto video.
+4. **Crea i MOTION.** Segui `04-prompts/motion.md`; gli overlay sono già in
+   `remotion/out/motion/`.
 5. **Monta.** Video sotto, motion sopra, voiceover, musica al 12–18%, sottotitoli bruciati.
 6. **Esporta** con `05-presets/export.md` e pubblica con la caption dello script.
 
@@ -61,21 +51,22 @@ Nel `manifest.csv` ogni riga ha `asset_id`, `tipo`, `durata_s`, `risoluzione`, `
 
 ## Regole di produzione
 
-- **Niente testo nelle immagini generate.** I testi si aggiungono in montaggio.
+- **Niente testo nelle immagini generate.** L'italiano dentro i modelli esce sbagliato.
 - **Niente volto.** Mani, schermo, terminale. Se serve una presenza, usa una voce.
-- **Niente intro.** Il primo fotogramma e gia il contenuto.
-- **Prova prima della promessa.** Ogni video mostra un risultato reale.
+- **Niente intro.** Il primo fotogramma è già il contenuto.
+- **Prova prima della promessa.** Mostra un risultato reale, non un rendering.
 - **Un video, un'idea.**
-- **Riverifica i prezzi il giorno della registrazione.** Cursor, Claude e Copilot cambiano listino.
+- **Riverifica i prezzi il giorno della registrazione.**
 
 ---
 
 ## Export finale
 
 ```bash
-cd /workspace/chats/ce8c1a0c58104488f4ba991a
-zip -r freebuff-export.zip freebuff-export \
-  -x 'freebuff-export/remotion/node_modules/*'
+cd freebuff-export/remotion
+npm install
+npm run render:promo
 ```
 
-Il file contiene testi, CSV, SRT, prompt e gli asset gia renderizzati. `node_modules` resta fuori: si reinstalla con `npm install`.
+Nel repo c'è `../freebuff-kit-text.zip` (1,5 MB) con testi, 19 skill e sorgente. Il pacchetto
+completo con gli overlay MOV è `../freebuff-kit-full.zip` (29 MB, nel workspace locale).
