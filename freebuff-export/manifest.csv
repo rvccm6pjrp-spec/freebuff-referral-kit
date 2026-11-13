@@ -1,0 +1,51 @@
+asset_id,video,tipo,ruolo,durata_s,formato,risoluzione,fps,fonte,file_atteso,stato,note
+F1-VID-01,F1 collega,VIDEO,apertura prezzo Cursor,4,MP4,1080x1920,30,Screen recording,F1-VID-01.mp4,da fare,Registrare la pagina prezzi senza tagli
+F1-VID-02,F1 collega,VIDEO,mani che digitano lente,8,MP4,1080x1920,30,Telefono o screen,F1-VID-02.mp4,da fare,Solo mani e tastiera
+F1-VID-03,F1 collega,VIDEO,split agent vs umano,6,MP4,1080x1920,30,Screen recording,F1-VID-03.mp4,da fare,Stessa funzione e stesso repo
+F1-VID-04,F1 collega,VIDEO,git diff finale,5,MP4,1080x1920,30,Screen recording,F1-VID-04.mp4,da fare,Evidenziare le righe aggiunte
+F1-MOT-01,F1 collega,MOTION,prezzo 20 euro al mese,2,MOV alpha,1080x1920,30,Remotion,F1-MOT-01.mov,renderizzato,Testo grande centrato
+F1-MOT-02,F1 collega,MOTION,wipe split screen,0.4,MOV alpha,1080x1920,30,Remotion,F1-MOT-02.mov,renderizzato,Bordo verde 2px
+F1-PH-01,F1 collega,PHOTO,copertina thumbnail,1,PNG,1080x1920,0,GPT Image,F1-PH-01.png,da fare,Prompt in 04-prompts/immagini.md
+F1-AUD-01,F1 collega,AUDIO,voiceover,25,WAV,48kHz,0,Voce o TTS,F1-AUD-01.wav,da fare,Testo in 02-voiceover/F1.txt
+F1-CAP-01,F1 collega,CAPTION,sottotitoli,25,SRT,1080x1920,0,Trascrizione,F1-CAP-01.srt,da fare,Stile bold centrato
+F2-VID-01,F2 gratis,VIDEO,prezzi competitor,4,MP4,1080x1920,30,Screen recording,F2-VID-01.mp4,da fare,Claude e Cursor affiancati
+F2-VID-02,F2 gratis,VIDEO,installazione,4,MP4,1080x1920,30,Screen recording,F2-VID-02.mp4,da fare,Tre comandi
+F2-VID-03,F2 gratis,VIDEO,build cronometrata,10,MP4,1080x1920,30,Screen recording,F2-VID-03.mp4,da fare,Mostrare il timer
+F2-MOT-01,F2 gratis,MOTION,contatore prezzo a zero,2,MOV alpha,1080x1920,30,Remotion,F2-MOT-01.mov,renderizzato,Da 20 a 0
+F2-PH-01,F2 gratis,PHOTO,copertina,1,PNG,1080x1920,0,GPT Image,F2-PH-01.png,da fare,Senza testo
+F2-AUD-01,F2 gratis,AUDIO,voiceover,20,WAV,48kHz,0,Voce o TTS,F2-AUD-01.wav,da fare,Testo in 02-voiceover/F2.txt
+F2-CAP-01,F2 gratis,CAPTION,sottotitoli,20,SRT,1080x1920,0,Trascrizione,F2-CAP-01.srt,da fare,Stile bold centrato
+F3-VID-01,F3 abbonamenti,VIDEO,tre email di disdetta,6,MP4,1080x1920,30,Screen recording,F3-VID-01.mp4,da fare,Oscurare i dati personali
+F3-VID-02,F3 abbonamenti,VIDEO,workflow ricostruito,12,MP4,1080x1920,30,Screen recording,F3-VID-02.mp4,da fare,Velocizzare 4x
+F3-VID-03,F3 abbonamenti,VIDEO,limiti dichiarati,8,MP4,1080x1920,30,Screen recording,F3-VID-03.mp4,da fare,Mostrare un errore reale
+F3-MOT-01,F3 abbonamenti,MOTION,totale 50 al mese,2,MOV alpha,1080x1920,30,Remotion,F3-MOT-01.mov,renderizzato,Contatore che sale
+F3-PH-01,F3 abbonamenti,PHOTO,copertina,1,PNG,1080x1920,0,GPT Image,F3-PH-01.png,da fare,Senza testo
+F3-AUD-01,F3 abbonamenti,AUDIO,voiceover,35,WAV,48kHz,0,Voce o TTS,F3-AUD-01.wav,da fare,Testo in 02-voiceover/F3.txt
+F4-VID-01,F4 reveal,VIDEO,PDF fattura 40 pagine,3,MP4,1080x1920,30,Screen recording,F4-VID-01.mp4,da fare,Scroll veloce
+F4-VID-02,F4 reveal,VIDEO,risultato pulito,8,MP4,1080x1920,30,Screen recording,F4-VID-02.mp4,da fare,Mostrare importo fornitore scadenza
+F4-VID-03,F4 reveal,VIDEO,processo velocizzato,8,MP4,1080x1920,30,Screen recording,F4-VID-03.mp4,da fare,Speed ramp 8x
+F4-MOT-01,F4 reveal,MOTION,reveal a tendina,0.6,MOV alpha,1080x1920,30,Remotion,F4-MOT-01.mov,renderizzato,Wipe da sinistra
+F4-PH-01,F4 reveal,PHOTO,copertina,1,PNG,1080x1920,0,GPT Image,F4-PH-01.png,da fare,Senza testo
+F4-AUD-01,F4 reveal,AUDIO,voiceover,22,WAV,48kHz,0,Voce o TTS,F4-AUD-01.wav,da fare,Testo in 02-voiceover/F4.txt
+F4-CAP-01,F4 reveal,CAPTION,sottotitoli,22,SRT,1080x1920,0,Trascrizione,F4-CAP-01.srt,da fare,Stile bold centrato
+F5-VID-01,F5 costo stack,VIDEO,calcolatrice che somma,6,MP4,1080x1920,30,Screen recording,F5-VID-01.mp4,da fare,20 piu 20 piu 10
+F5-VID-02,F5 costo stack,VIDEO,stack alternativo,10,MP4,1080x1920,30,Screen recording,F5-VID-02.mp4,da fare,Mostrare i limiti
+F5-MOT-01,F5 costo stack,MOTION,totale 600 euro anno,3,MOV alpha,1080x1920,30,Remotion,F5-MOT-01.mov,renderizzato,Contatore 50 a 600
+F5-PH-01,F5 costo stack,PHOTO,copertina,1,PNG,1080x1920,0,GPT Image,F5-PH-01.png,da fare,Senza testo
+F5-AUD-01,F5 costo stack,AUDIO,voiceover,30,WAV,48kHz,0,Voce o TTS,F5-AUD-01.wav,da fare,Testo in 02-voiceover/F5.txt
+F6-VID-01,F6 tre comandi,VIDEO,terminale tre comandi,8,MP4,1080x1920,30,Screen recording,F6-VID-01.mp4,da fare,Digitazione a velocita reale
+F6-VID-02,F6 tre comandi,VIDEO,prima build,8,MP4,1080x1920,30,Screen recording,F6-VID-02.mp4,da fare,Prompt semplice
+F6-MOT-01,F6 tre comandi,MOTION,contatore comandi 1 2 3,3,MOV alpha,1080x1920,30,Remotion,F6-MOT-01.mov,renderizzato,Monospace
+F6-PH-01,F6 tre comandi,PHOTO,copertina,1,PNG,1080x1920,0,GPT Image,F6-PH-01.png,da fare,Senza testo
+F6-AUD-01,F6 tre comandi,AUDIO,voiceover,20,WAV,48kHz,0,Voce o TTS,F6-AUD-01.wav,da fare,Testo in 02-voiceover/F6.txt
+F7-VID-01,F7 fattura,VIDEO,XML a schermo,4,MP4,1080x1920,30,Screen recording,F7-VID-01.mp4,da fare,Zoom su una riga
+F7-VID-02,F7 fattura,VIDEO,build pagina,10,MP4,1080x1920,30,Screen recording,F7-VID-02.mp4,da fare,Velocizzare 6x
+F7-VID-03,F7 fattura,VIDEO,pagina finale su telefono,8,MP4,1080x1920,30,Telefono,F7-VID-03.mp4,da fare,Mano che scorre
+F7-MOT-01,F7 fattura,MOTION,tre dati evidenziati,4,MOV alpha,1080x1920,30,Remotion,F7-MOT-01.mov,renderizzato,Importo fornitore scadenza
+F7-PH-01,F7 fattura,PHOTO,copertina,1,PNG,1080x1920,0,GPT Image,F7-PH-01.png,da fare,Senza testo
+F7-AUD-01,F7 fattura,AUDIO,voiceover,30,WAV,48kHz,0,Voce o TTS,F7-AUD-01.wav,da fare,Testo in 02-voiceover/F7.txt
+F8-VID-01,F8 recap,VIDEO,dashboard numeri,6,MP4,1080x1920,30,Screen recording,F8-VID-01.mp4,da fare,Dati veri della settimana
+F8-VID-02,F8 recap,VIDEO,il video migliore,8,MP4,1080x1920,30,Screen recording,F8-VID-02.mp4,da fare,Mostrare il post
+F8-MOT-01,F8 recap,MOTION,barra 47 su 600,3,MOV alpha,1080x1920,30,Remotion,F8-MOT-01.mov,renderizzato,Riempimento 7.8 percento
+F8-PH-01,F8 recap,PHOTO,copertina,1,PNG,1080x1920,0,GPT Image,F8-PH-01.png,da fare,Senza testo
+F8-AUD-01,F8 recap,AUDIO,voiceover,25,WAV,48kHz,0,Voce o TTS,F8-AUD-01.wav,da fare,Testo in 02-voiceover/F8.txt
