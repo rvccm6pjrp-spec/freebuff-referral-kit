@@ -1,6 +1,6 @@
 # 14 — Freebuff Italia: 600 inviti reali in 90 giorni
 
-> Piano operativo. La verifica della reward e la strategia generale sono in `13-freebuff-600.md`. Questo file risponde a una sola domanda: **cosa pubblico, dove e quando, per arrivare a 600.**
+> Piano operativo. La verifica della reward e la strategia generale sono in `01-600-inviti.md`. Questo file risponde a una sola domanda: **cosa pubblico, dove e quando, per arrivare a 600.**
 
 ---
 

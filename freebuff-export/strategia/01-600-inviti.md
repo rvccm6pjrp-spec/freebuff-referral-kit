@@ -2,7 +2,7 @@
 
 > **Stato: confermato.** La pagina `freebuff.com/?view=rewards` riporta il traguardo: **600 inviti reali → MacBook Pro 2026 spedito**. Restano da leggere le condizioni complete (cosa rende un invito "reale", scadenza, spedizione), ma la campagna parte.
 >
-> **Piano operativo Italia, 90 giorni:** `14-freebuff-italia-90.md`.
+> **Piano operativo Italia, 90 giorni:** `02-piano-90-giorni.md`.
 
 ---
 
