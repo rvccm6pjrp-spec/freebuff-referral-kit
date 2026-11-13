@@ -25,7 +25,7 @@ npm run render:promo
 
 Senza questo passaggio il video mostra `IL-TUO-CODICE`.
 
-Gli asset binari (MP4, MOV, zip) non sono versionati: si rigenerano con i comandi sotto. Il pacchetto completo e gia renderizzato in `freebuff-export.zip` nel workspace locale.
+Gli asset binari (MP4, MOV, zip) non sono versionati: si rigenerano con i comandi sotto. Il pacchetto completo, gia renderizzato, e in `freebuff-export.zip` nel workspace locale.
 
 ---
 
@@ -49,7 +49,7 @@ freebuff-export/
         └── stills/   anteprime PNG
 ```
 
-Le schede strategiche stanno in `campagna-buddy/` nel workspace locale: `13-freebuff-600.md`, `14-freebuff-italia-90.md`, `17-contenuti-v2.md`.
+La strategia completa e in `strategy/README.md`; i documenti estesi sono in `campagna-buddy/` nel workspace locale.
 
 ---
 
@@ -90,7 +90,7 @@ Gli overlay sono ProRes 4444, 1080x1920, 30 fps, `yuva444p12le`. Si montano sopr
 | Riprese reali | da fare |
 | Pubblicazione | da fare |
 
-Il kit non garantisce un numero di iscritti: la conversione dipende da hook, pubblico e frequenza. Il caso studio usato per le stime e documentato in `campagna-buddy/13-freebuff-600.md`.
+Il kit non garantisce un numero di iscritti: la conversione dipende da hook, pubblico e frequenza. Il caso studio usato per le stime e documentato in `strategy/README.md`.
 
 ---
 
