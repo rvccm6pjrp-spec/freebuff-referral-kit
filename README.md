@@ -1,90 +1,80 @@
 # Freebuff Referral Kit
 
-Materiali pronti per portare utenti su [Freebuff](https://freebuff.com) con un link invito personale: script, motion, un promo verticale già renderizzato e il piano di pubblicazione.
+Materiali pronti per portare **600 utenti invitati reali** su Freebuff: un promo verticale già
+renderizzato, 8 script, la strategia, le regole per pubblicare il link senza spam e 19 skill
+operative. Budget 0, contenuti organici, nessun volto.
 
-Niente spam, niente DM non richiesti, niente promesse di guadagno. Solo contenuti che mostrano cosa fa il prodotto e quanto costa.
+**Pagina pubblica (video + download):**
+https://site-2f41f8031e8745daaaa3f1ead41ad35f.freebuff.page
 
 **Link referral:**
 `https://freebuff.com/?ref=ref-f0f0c25f-722c-4afd-8fa5-a8a96d66f799&via=rewards_link`
 
+**Da dove iniziare:** [INIZIA-QUI.md](INIZIA-QUI.md) — 10 minuti, poi sai cosa fare.
+
 ---
 
-## Il promo
+## Cosa c'è
 
-`freebuff-export/remotion/out/promo/FREEBUFF-promo-v01.mp4`
+| Cosa | Dove |
+|---|---|
+| Video promo 26 s, 1080×1920 | `freebuff-export/remotion/out/promo/FREEBUFF-promo-v01.mp4` |
+| Come rigenerarlo | [VIDEO.md](VIDEO.md) |
+| 8 script con shot list | `freebuff-export/01-scripts/` |
+| Voiceover e sottotitoli | `freebuff-export/02-voiceover/`, `03-captions/` |
+| Strategia 600 inviti, piano 90 giorni, calendario 14 giorni | `freebuff-export/strategia/` |
+| Dove mettere il link, piattaforma per piattaforma | `freebuff-export/07-distribuzione/REGOLE-LINK.md` |
+| 19 skill | `skills/`, audit in [SKILLS.md](SKILLS.md) |
+| Manifest dei 50 asset | `freebuff-export/manifest.csv` |
 
-- 1080×1920, 30 fps, H.264, 26 secondi
-- Nessun audio: la musica si aggiunge in montaggio
-- Ricevuta dei costi → timbro "gratis" → CTA `LINK IN BIO`
-- Disclosure del referral inclusa nell'ultima schermata
+La campagna buddybank è archiviata separatamente e non serve per Freebuff.
 
-Per rigenerare il video:
+---
 
-```bash
-cd freebuff-export/remotion
-npm install
-npm run render:promo
-```
+## I tre percorsi
 
-Il link è già in `freebuff-export/remotion/src/config.ts`. Il video non mostra l'URL completo: sarebbe illeggibile. Va messo in bio, descrizione o commento a seconda della piattaforma.
+**Oggi, 30 minuti.** Guarda il promo, leggi le regole del link, metti il link in bio, aggiungi
+musica e caption, pubblica. Il video è già pronto.
 
-**Dove metterlo, piattaforma per piattaforma:** `freebuff-export/07-distribuzione/REGOLE-LINK.md`.
+**2–3 giorni.** Gira uno o più degli 8 script, monta con i preset, esporta. Ogni script ha
+timecode e shot list.
+
+**Con l'agente.** Apri `skills/README.md`, scegli la skill dal lavoro che devi fare. Le skill sono in
+`skills/`; se lavori in un altro progetto, copiale in `.agents/skills/`.
+
+---
+
+## Le tre regole
+
+1. **Un link, nel posto cliccabile giusto.** Bio su Instagram/TikTok, link del canale su
+   YouTube, post o primo commento su LinkedIn, post su X. Su Reddit solo se il sub lo permette.
+2. **Disclosure sempre.** `ADV: link referral, se lo usi ricevo sessioni extra.` Anche quando
+   il link è in bio. Toggle contenuto commerciale attivo dove richiesto.
+3. **Niente spam.** Zero link nei commenti di altri, zero DM non richiesti, zero account
+   multipli, zero promesse di guadagno.
 
 ---
 
 ## Struttura
 
 ```
+README.md
+INIZIA-QUI.md          ← handover
+VIDEO.md               ← scheda del video
+SKILLS.md              ← audit delle 19 skill
 freebuff-export/
-├── 01-scripts/       8 script completi (hook, corpo, CTA, note di ripresa)
-├── 02-voiceover/     testi voiceover pronti
-├── 03-captions/      sottotitoli SRT
-├── 04-prompts/       prompt immagini e specifiche motion
-├── 05-presets/       preset di export e loudness
-├── 06-promo/         istruzioni e caption del promo
-├── 07-distribuzione/ dove mettere il link e regole anti-spam
-├── manifest.csv      50 asset classificati
-└── remotion/         progetto Remotion: 6 overlay + promo
-    ├── src/
-    ├── scripts/
-    └── out/
-        ├── motion/   6 overlay ProRes 4444 con alpha
-        ├── promo/    MP4 pubblicabile
-        └── stills/   anteprime PNG
+├── strategia/         ← 600 inviti, 90 giorni, 14 giorni
+├── 01-scripts/        ← 8 script
+├── 02-voiceover/      ← voce
+├── 03-captions/       ← SRT
+├── 04-prompts/        ← immagini e motion
+├── 05-presets/        ← export
+├── 06-promo/          ← istruzioni e caption
+├── 07-distribuzione/  ← regole del link
+├── manifest.csv
+└── remotion/          ← sorgente + MP4
+skills/                ← 19 skill
 ```
-
-Le tre schede strategiche stanno in `campagna-buddy/`:
-
-- `13-freebuff-600.md` — matematica della crescita: view, click, utenti
-- `14-freebuff-italia-90.md` — piano Italia 90 giorni
-- `17-contenuti-v2.md` — 8 script, 20 hook, calendario 14 giorni
-
----
-
-## Comandi
-
-```bash
-cd freebuff-export/remotion
-npm install
-
-npm run studio        # anteprima interattiva
-npm run render        # 6 overlay .mov con alpha
-npm run render:promo  # promo MP4 pubblicabile
-npm run still         # anteprime PNG
-```
-
-Gli overlay sono ProRes 4444, 1080×1920, 30 fps, `yuva444p12le`. Si montano sopra video sorgente in DaVinci, Premiere o CapCut.
-
----
-
-## Checklist prima di pubblicare
-
-- [ ] Link referral nel posto cliccabile giusto per la piattaforma
-- [ ] Prezzi degli abbonamenti riverificati il giorno stesso
-- [ ] Musica aggiunta e mixata al 10–15%
-- [ ] Disclosure `ADV` visibile, contenuto commerciale attivato dove richiesto
-- [ ] Caption con CTA e hashtag
-- [ ] Pubblicato in nativo su TikTok, Reels, Shorts e X
 
 ---
 
@@ -92,13 +82,28 @@ Gli overlay sono ProRes 4444, 1080×1920, 30 fps, `yuva444p12le`. Si montano sop
 
 | Cosa | Stato |
 |---|---|
-| Script e copy | pronti |
-| Overlay motion | renderizzati |
-| Promo verticale | renderizzato con link in bio |
+| Promo verticale | fatto, nel repo |
+| Script, voiceover, SRT | fatti |
+| Strategia e calendario | fatti |
+| Regole per piattaforma | fatte |
+| 19 skill | fatte |
+| Musica | da aggiungere |
 | Riprese reali | da fare |
 | Pubblicazione | da fare |
 
-Il kit non garantisce un numero di iscritti: la conversione dipende da hook, pubblico e frequenza. Il caso studio usato per le stime è documentato in `campagna-buddy/13-freebuff-600.md`.
+Il kit non garantisce 600 iscritti: la conversione dipende da hook, pubblico e frequenza. La
+matematica e i limiti sono in `freebuff-export/strategia/01-600-inviti.md`.
+
+---
+
+## Condivisione
+
+La repo è **privata**. Per farla vedere a una collega:
+
+- aggiungila come collaboratrice (Settings → Collaborators), oppure
+- condividi la pagina pubblica: contiene video e pacchetto completo, senza accesso GitHub.
+
+Non rendere pubblica la repo senza il consenso di chi ha creato la campagna.
 
 ---
 

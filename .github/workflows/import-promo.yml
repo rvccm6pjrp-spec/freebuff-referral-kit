@@ -1,0 +1,39 @@
+name: Import promo video
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/import-promo.yml
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download video and text kit
+        run: |
+          mkdir -p freebuff-export/remotion/out/promo
+          curl -fL --retry 3 --retry-delay 2 \
+            "https://site-2f41f8031e8745daaaa3f1ead41ad35f.freebuff.page/FREEBUFF-promo-v01.mp4" \
+            -o freebuff-export/remotion/out/promo/FREEBUFF-promo-v01.mp4
+          curl -fL --retry 3 --retry-delay 2 \
+            "https://site-2f41f8031e8745daaaa3f1ead41ad35f.freebuff.page/freebuff-kit-text.zip" \
+            -o freebuff-kit-text.zip
+          ls -lh freebuff-export/remotion/out/promo/FREEBUFF-promo-v01.mp4 freebuff-kit-text.zip
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add freebuff-export/remotion/out/promo/FREEBUFF-promo-v01.mp4 freebuff-kit-text.zip
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+          else
+            git commit -m "Add promo video and text kit (26s, 1080x1920)"
+            git push
+          fi
