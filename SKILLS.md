@@ -26,7 +26,8 @@ parti che servono a una persona sola che pubblica da zero.
 | Produzione video | I copioni c'erano, ma non le impostazioni di ripresa, audio, export | `video-production` |
 | Commenti e DM | Il punto in cui una campagna referral diventa spam o community | `community-engagement` |
 
-Totale: **19 skill** in `skills/` e in `.agents/skills/`.
+Totale: **19 skill**. Le 14 di base sono nel pacchetto `freebuff-kit-text.zip`; le 5 aggiunte
+sono anche browsabili in `skills/`.
 
 ## Cosa non ho aggiunto, e perché
 

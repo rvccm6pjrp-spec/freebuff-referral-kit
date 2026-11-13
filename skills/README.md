@@ -15,8 +15,8 @@ mkdir -p .agents/skills
 cp -r skills/* .agents/skills/
 ```
 
-Nel workspace del progetto sono già in `.agents/skills/`. La cartella `skills/` è la copia
-leggibile e versionata.
+Nella copia di lavoro originale sono in `.agents/skills/`. Nel repo trovi le 5 aggiunte e il
+pacchetto `freebuff-kit-text.zip` con tutte e 19.
 
 ## Le 14 di base
 
