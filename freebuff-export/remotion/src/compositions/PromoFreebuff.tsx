@@ -8,7 +8,7 @@ import {
   useVideoConfig,
 } from 'remotion';
 import {COLORS, FONT_MONO, FONT_TITLE} from '../theme';
-import {REFERRAL_CODE, SITE} from '../config';
+import {CTA, SITE} from '../config';
 
 const INK = COLORS.ink;
 const CREAM = COLORS.cream;
@@ -342,19 +342,19 @@ export const PromoFreebuff: React.FC = () => {
                   color: 'rgba(255,255,255,0.65)',
                 }}
               >
-                CODICE INVITO
+                DOVE TROVARLO
               </div>
               <div
                 style={{
                   fontFamily: FONT_MONO,
                   fontWeight: 700,
-                  fontSize: 44,
+                  fontSize: 40,
                   color: GREEN,
                   marginTop: 6,
                   letterSpacing: 2,
                 }}
               >
-                {REFERRAL_CODE}
+                {CTA}
               </div>
             </div>
 
@@ -370,7 +370,7 @@ export const PromoFreebuff: React.FC = () => {
                 textAlign: 'center',
               }}
             >
-              ADV: referral personale. Se usi il codice ricevo sessioni extra.
+              ADV: link referral in bio. Se lo usi ricevo sessioni extra.
             </div>
           </div>
         </AbsoluteFill>

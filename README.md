@@ -1,21 +1,24 @@
 # Freebuff Referral Kit
 
-Materiali pronti per portare utenti su [Freebuff](https://freebuff.com) con un codice invito personale: script, motion, un promo verticale e il piano di pubblicazione.
+Materiali pronti per portare utenti su [Freebuff](https://freebuff.com) con un link invito personale: script, motion, un promo verticale già renderizzato e il piano di pubblicazione.
 
 Niente spam, niente DM non richiesti, niente promesse di guadagno. Solo contenuti che mostrano cosa fa il prodotto e quanto costa.
+
+**Link referral:**
+`https://freebuff.com/?ref=ref-f0f0c25f-722c-4afd-8fa5-a8a96d66f799&via=rewards_link`
 
 ---
 
 ## Il promo
 
-Composizione `PROMO-Freebuff`: 1080x1920, 30 fps, H.264, 26 secondi.
+`freebuff-export/remotion/out/promo/FREEBUFF-promo-v01.mp4`
 
-- Ricevuta dei costi: Cursor 20, Claude 20, Copilot 10, totale 50 €/mese
-- Timbro verde: 0,00, gratis
-- CTA con comando di installazione e codice invito
-- Disclosure del referral nell'ultima schermata
+- 1080×1920, 30 fps, H.264, 26 secondi
+- Nessun audio: la musica si aggiunge in montaggio
+- Ricevuta dei costi → timbro "gratis" → CTA `LINK IN BIO`
+- Disclosure del referral inclusa nell'ultima schermata
 
-**Prima di pubblicare** imposta il tuo codice in `freebuff-export/remotion/src/config.ts` e rigenera:
+Per rigenerare il video:
 
 ```bash
 cd freebuff-export/remotion
@@ -23,40 +26,38 @@ npm install
 npm run render:promo
 ```
 
-Senza questo passaggio il video mostra `IL-TUO-CODICE`.
+Il link è già in `freebuff-export/remotion/src/config.ts`. Il video non mostra l'URL completo: sarebbe illeggibile. Va messo in bio, descrizione o commento a seconda della piattaforma.
+
+**Dove metterlo, piattaforma per piattaforma:** `freebuff-export/07-distribuzione/REGOLE-LINK.md`.
 
 ---
 
-## Cosa c'è dentro
+## Struttura
 
-### Contenuti
+```
+freebuff-export/
+├── 01-scripts/       8 script completi (hook, corpo, CTA, note di ripresa)
+├── 02-voiceover/     testi voiceover pronti
+├── 03-captions/      sottotitoli SRT
+├── 04-prompts/       prompt immagini e specifiche motion
+├── 05-presets/       preset di export e loudness
+├── 06-promo/         istruzioni e caption del promo
+├── 07-distribuzione/ dove mettere il link e regole anti-spam
+├── manifest.csv      50 asset classificati
+└── remotion/         progetto Remotion: 6 overlay + promo
+    ├── src/
+    ├── scripts/
+    └── out/
+        ├── motion/   6 overlay ProRes 4444 con alpha
+        ├── promo/    MP4 pubblicabile
+        └── stills/   anteprime PNG
+```
 
-- `freebuff-export/01-scripts/` — 8 script completi, con hook, beat, shot list, voiceover e rischi.
-- `freebuff-export/02-voiceover/` — testi voiceover pronti.
-- `freebuff-export/03-captions/` — sottotitoli SRT.
-- `freebuff-export/04-prompts/` — prompt immagini e specifiche motion.
-- `freebuff-export/05-presets/` — preset di export e loudness.
-- `freebuff-export/06-promo/` — istruzioni e caption del promo.
-- `freebuff-export/manifest.csv` — 50 asset classificati.
+Le tre schede strategiche stanno in `campagna-buddy/`:
 
-### Strategia
-
-- `strategy/README.md` — matematica dei 600, serie 0/600, compliance.
-- `campagna-buddy/13-freebuff-600.md` — verifica reward, pubblico, canali, piano 90 giorni.
-- `campagna-buddy/14-freebuff-italia-90.md` — piano operativo Italia, 15 hook, calendario.
-- `campagna-buddy/17-contenuti-v2.md` — 8 script Freebuff + 5 buddybank, 20 hook, piano 14 giorni.
-
-### Skill
-
-- `.agents/skills/` — 4 definizioni operative: `hook-writer`, `tiktok-script`, `reels-script`, `content-calendar`.
-- `.agents/skills/README.md` — elenco delle 14 skill installate.
-
-Le 14 skill complete (96 file, 884 KB, con references ed evals) e gli altri 16 documenti buddybank sono nel pacchetto `freebuff-kit-full.zip`.
-
-### Motion
-
-- `freebuff-export/remotion/src/` — 6 overlay + promo.
-- `freebuff-export/remotion/scripts/` — render di tutti gli asset.
+- `13-freebuff-600.md` — matematica della crescita: view, click, utenti
+- `14-freebuff-italia-90.md` — piano Italia 90 giorni
+- `17-contenuti-v2.md` — 8 script, 20 hook, calendario 14 giorni
 
 ---
 
@@ -72,19 +73,17 @@ npm run render:promo  # promo MP4 pubblicabile
 npm run still         # anteprime PNG
 ```
 
-Gli overlay sono ProRes 4444, 1080x1920, 30 fps, `yuva444p12le`. Si montano sopra video sorgente in DaVinci, Premiere o CapCut.
-
-I binari (MP4, MOV, zip) non sono versionati: si rigenerano con i comandi. Il pacchetto gia renderizzato e `freebuff-kit-full.zip`.
+Gli overlay sono ProRes 4444, 1080×1920, 30 fps, `yuva444p12le`. Si montano sopra video sorgente in DaVinci, Premiere o CapCut.
 
 ---
 
 ## Checklist prima di pubblicare
 
-- [ ] Codice invito impostato in `src/config.ts`
+- [ ] Link referral nel posto cliccabile giusto per la piattaforma
 - [ ] Prezzi degli abbonamenti riverificati il giorno stesso
 - [ ] Musica aggiunta e mixata al 10–15%
-- [ ] Disclosure del referral visibile
-- [ ] Caption con codice e hashtag
+- [ ] Disclosure `ADV` visibile, contenuto commerciale attivato dove richiesto
+- [ ] Caption con CTA e hashtag
 - [ ] Pubblicato in nativo su TikTok, Reels, Shorts e X
 
 ---
@@ -95,11 +94,11 @@ I binari (MP4, MOV, zip) non sono versionati: si rigenerano con i comandi. Il pa
 |---|---|
 | Script e copy | pronti |
 | Overlay motion | renderizzati |
-| Promo verticale | renderizzato |
+| Promo verticale | renderizzato con link in bio |
 | Riprese reali | da fare |
 | Pubblicazione | da fare |
 
-Il kit non garantisce un numero di iscritti: la conversione dipende da hook, pubblico e frequenza. Il caso studio usato per le stime e documentato in `strategy/README.md`.
+Il kit non garantisce un numero di iscritti: la conversione dipende da hook, pubblico e frequenza. Il caso studio usato per le stime è documentato in `campagna-buddy/13-freebuff-600.md`.
 
 ---
 
