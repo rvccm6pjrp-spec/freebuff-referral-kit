@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:03,400
+Il mio collega paga venti euro al mese
+
+2
+00:00:03,400 --> 00:00:05,600
+per farsi scrivere codice.
+
+3
+00:00:05,600 --> 00:00:08,800
+E adesso ti faccio vedere cosa fa con le mani.
+
+4
+00:00:08,800 --> 00:00:12,000
+Scrive. Una riga alla volta.
+
+5
+00:00:12,000 --> 00:00:15,200
+Stessa funzione. Stesso repository.
+
+6
+00:00:15,200 --> 00:00:19,200
+Venti secondi. Lui ci ha messo un'ora.
+
+7
+00:00:19,200 --> 00:00:22,400
+Non gliel'ho detto.
+
+8
+00:00:22,400 --> 00:00:25,000
+Paga ancora.

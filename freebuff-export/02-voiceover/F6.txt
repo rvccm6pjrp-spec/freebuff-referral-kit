@@ -1,0 +1,5 @@
+Tre comandi e hai un agent che scrive codice.
+Installa. Entra nel progetto. Avvia.
+Nessuna carta, nessun trial.
+Primo prompt: crea una pagina con il mio nome. Fatto.
+Commenta SETUP e ti mando i cinque prompt con cui inizio.

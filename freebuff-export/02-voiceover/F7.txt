@@ -1,0 +1,5 @@
+Questa è una fattura elettronica. È scritta per le macchine.
+Importo, fornitore, scadenza. Tre informazioni, zero leggibilità.
+Ho chiesto una pagina leggibile.
+Dodici minuti. Ora la mando al commercialista.
+Vediamo se capisce.
